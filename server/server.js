@@ -1,5 +1,6 @@
 const express = require('express');
 const dbConnection = require('../database/config');
+const cors = require('cors');
 
 class Server {
 
@@ -25,6 +26,9 @@ class Server {
     middlewares() {
         //directorio público
         this.app.use(express.static('public'));
+
+        //Implementación de cors
+        this.app.use(cors());
 
         //lectura y parseo del body
         this.app.use(express.json());
