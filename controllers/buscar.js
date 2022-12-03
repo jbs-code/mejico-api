@@ -1,7 +1,7 @@
 const Producto = require("../model/productos");
 
 const productosPorCategoria = async (req, res) => {
-    const { categoria } = req.params;
+    const categoria = req.categoriaId;//id de la categoría
     const { limite = 20, desde = 0} = req.query;
 
     const [total, productos] = await Promise.all([
@@ -20,7 +20,7 @@ const productosPorCategoria = async (req, res) => {
 }
 
 const productosPorCategoriaDisponibles = async (req, res) => {
-    const { categoria } = req.params;
+    const categoria = req.categoriaId;//id de la categoría
     const { limite = 20, desde = 0} = req.query;
 
     const [total, productos] = await Promise.all([
