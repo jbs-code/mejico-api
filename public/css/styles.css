@@ -20,7 +20,6 @@ a {
   height: 100vh;
   position: relative;
   margin: auto;
-  z-index: 10;
 }
 
 .header-title {
@@ -43,6 +42,7 @@ a {
   width: 100%;
   max-height: 100vh;
   position: absolute;
+  overflow: hidden;
 }
 
 .header-fondo img {
@@ -91,7 +91,6 @@ a {
   display: flex;
   justify-content: center;
   position: relative;
-  border-left: 2px solid gray;
 }
 
 .menu ul {
@@ -102,6 +101,9 @@ a {
   position: fixed;
   top: 0px;
   padding-left: 0px;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-left: 2px solid gray;
 }
 
 .menu ul li {

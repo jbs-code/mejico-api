@@ -34,8 +34,8 @@
                     <p>Con este endpoint obtendrás las categorías disponibles:</p>
                     <li class="item-url">{{url}}/categorias?limite=20&desde=0</li>
                     <p>Parámetros:</p>
-                    <li>limite: Limita el número de resultados.</li>
-                    <li>desde: Para indicar a partir de cual categoría te interesa obtener resultados.</li>
+                    <li>limite: Limita el número de resultados (opcional).</li>
+                    <li>desde: Para indicar a partir de cual categoría te interesa obtener resultados (opcional).</li>
                     <pre class="codigo">
                         <h3>Respuesta</h3>
                         <code>
@@ -59,8 +59,8 @@
                     <p>Con este endpoint obtendrás los productos disponibles:</p>
                     <li class="item-url">{{url}}/productos?limite=0&desde=0</li>
                     <p>Parámetros:</p>
-                    <li>limite: Limita el número de resultados.</li>
-                    <li>desde: Para indicar a partir de cual producto te interesa obtener resultados.</li>
+                    <li>limite: Limita el número de resultados (opcional).</li>
+                    <li>desde: Para indicar a partir de cual producto te interesa obtener resultados (opcional).</li>
                     <pre class="codigo">
                         <h3>Respuesta</h3>
                         <code>
@@ -78,8 +78,8 @@
             "costo": 25,
             "disponibilidad": true,
             "responsable": {
-            "_id": "634dfcb27bdd9bc335a569db",
-            "nombre": "JaimeDev"
+                "_id": "634dfcb27bdd9bc335a569db",
+                "nombre": "JaimeDev"
             }
         }
                         </code>
@@ -88,11 +88,11 @@
                 <section id="productosCategoria" class="item">
                     <h2>Productos por Categoría</h2>
                     <p>Con este endpoint obtendrás los productos de una categoría en específico:</p>
-                    <li class="item-url">{{url}}/buscar/productos/disponibles/<span>categoriaId</span>?limite=0&desde=0</li>
+                    <li class="item-url">{{url}}/buscar/productos/<span>nombre_categoria</span>?limite=0&desde=0</li>
                     <p>Parámetros:</p>
-                    <li>categoriaId: Debes poner el id de la categoría de los productos que te interesan.</li>
-                    <li>limite: Limita el número de resultados.</li>
-                    <li>desde: Para indicar a partir de cual producto te interesa obtener resultados.</li>
+                    <li>nombre_categoria: Debes poner el nombre de la categoría (entradas, plato fuerte, postres o bebidas) de los productos que te interesan.</li>
+                    <li>limite: Limita el número de resultados (opcional).</li>
+                    <li>desde: Para indicar a partir de cual producto te interesa obtener resultados (opcional).</li>
                     <pre class="codigo">
                         <h3>La respuesta es similar a la búsqueda de productos.</h3>
                     </pre>
@@ -100,11 +100,9 @@
                 <section id="productosPorNombre" class="item">
                     <h2>Productos por nombre</h2>
                     <p>Con este endpoint obtendrás los productos que coincidan con el nombre que indiques.</p>
-                    <li class="item-url">{{url}}/buscar/productos/nombre/<span>nombreDelProducto</span>?limite=0&desde=0</li>
+                    <li class="item-url">{{url}}/buscar/productos/nombre/<span>nombre_producto</span></li>
                     <p>Parámetros:</p>
-                    <li>nombreDelProducto: Debes poner el nombre del producto que quieres buscar.</li>
-                    <li>limite: Limita el número de resultados.</li>
-                    <li>desde: Para indicar a partir de cual producto te interesa obtener resultados.</li>
+                    <li>nombre_producto: Debes poner el nombre del producto que quieres buscar.</li>
                     <pre class="codigo">
                         <h3>La respuesta es similar a la búsqueda de productos.</h3>
                     </pre>
