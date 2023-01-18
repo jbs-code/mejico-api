@@ -111,3 +111,13 @@ a {
   list-style: none;
   padding: 0px 20px;
 }
+
+.footer {
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: underline;
+}
