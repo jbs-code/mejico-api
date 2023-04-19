@@ -11,6 +11,8 @@
   
 - Ejecutar "npm install" para instalar las dependencias y después "npm start" para ejecutar la aplicación.
 
+- Está disponible una versión de este proyecto con TypeScript si es que lo prefieres. El repositorio lo encuentras [Aquí](https://github.com/jbs-code/api-mejico-ts).
+
 - ¡Listo!
 
 ## Toda la documentación del funcionamiento de la API se registro en Postman, la puedes consultar en: [Postman](https://documenter.getpostman.com/view/18132429/2s8ZDX43MB).
